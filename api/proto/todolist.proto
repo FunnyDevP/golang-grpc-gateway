@@ -1,0 +1,54 @@
+syntax = "proto3";
+package proto;
+
+
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+//option go_package = "github.com/FunnyDevP/todolist-golang-grpc-gateway/api/proto";
+
+service TodoListService {
+    rpc Create(CreateTaskRequest) returns (CreateTaskResponse) {
+        option (google.api.http) = {
+            post: "/api/v1/tasks"
+            body: "*"
+        };
+    }
+    rpc Gets(google.protobuf.Empty) returns (GetsResponse) {
+        option (google.api.http) = {
+            get: "/api/v1/tasks"
+        };
+    }
+}
+enum TaskStatus {
+    PENDING = 0;
+    DONE = 1;
+    DELETED = 2;
+}
+
+message CreateTaskRequest {
+    string task_category = 1;
+    string task_name = 2;
+    google.protobuf.StringValue task_description = 3;
+    TaskStatus task_status = 4;
+    google.protobuf.StringValue task_created = 5;
+}
+
+message CreateTaskResponse {
+    Task data = 1;
+}
+
+message GetsResponse {
+    repeated Task data = 1;
+}
+
+message Task {
+    int32 task_id = 1;
+    string task_category = 2;
+    string task_name = 3;
+    google.protobuf.StringValue task_description = 4;
+
+    TaskStatus task_status = 5;
+    string task_created = 6;
+    google.protobuf.StringValue task_deleted = 7;
+}
