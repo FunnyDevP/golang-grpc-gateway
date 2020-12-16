@@ -27,11 +27,12 @@ enum TaskStatus {
 }
 
 message CreateTaskRequest {
-    string task_category = 1;
+    string category_id = 1;
     string task_name = 2;
     google.protobuf.StringValue task_description = 3;
     TaskStatus task_status = 4;
     google.protobuf.StringValue task_created = 5;
+
 }
 
 message CreateTaskResponse {
@@ -43,8 +44,8 @@ message GetsResponse {
 }
 
 message Task {
-    int32 task_id = 1;
-    string task_category = 2;
+    string task_id = 1;
+    string category_id = 2;
     string task_name = 3;
     google.protobuf.StringValue task_description = 4;
 
