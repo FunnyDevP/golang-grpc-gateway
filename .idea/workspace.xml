@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3706526e-6ffb-420d-a5ac-746be0bf6fcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/todolist-golang-grpc-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todolist-golang-grpc-gateway.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/proto/todolist.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/proto/todolist.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/proto/todolist.proto" beforeDir="false" afterPath="$PROJECT_DIR$/api/proto/todolist.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/grpc/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/init/grpc/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/handler/todolist.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/handler/todolist.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +49,7 @@
       <recent name="$PROJECT_DIR$/internal/repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestCreateTasks in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test">
+  <component name="RunManager" selected="Go Test.TestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository">
     <configuration name="go build github.com/FunnyDevP/todolist-golang-grpc-gateway/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="todolist-golang-grpc-gateway" />
       <working_directory value="$PROJECT_DIR$" />
@@ -79,7 +70,7 @@
       <pattern value="^\QTestCreateTasks\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="todolist-golang-grpc-gateway" />
       <working_directory value="$PROJECT_DIR$/internal/repository" />
       <framework value="gotest" />
@@ -87,6 +78,7 @@
       <package value="github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription\E$" />
       <method v="2" />
     </configuration>
     <configuration name="go test github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -111,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository" />
         <item itemvalue="Go Test.TestCreateTasks in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test" />
         <item itemvalue="Go Build.go build github.com/FunnyDevP/todolist-golang-grpc-gateway/cmd" />
         <item itemvalue="Go Test.todolist_test.go" />
         <item itemvalue="Go Test.go test github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test" />
-        <item itemvalue="Go Test.go test github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository" />
       </list>
     </recent_temporary>
   </component>
@@ -125,16 +117,5 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/repository/todolist.go</url>
-          <line>40</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
