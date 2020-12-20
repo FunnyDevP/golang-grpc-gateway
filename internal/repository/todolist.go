@@ -26,6 +26,7 @@ func NewTodoListRepository(db *sql.DB) *todoListRepository {
 func queryInsertBuilder(req *proto.CreateTaskRequest) string {
 	q1 := "INSERT INTO tasks(id,name,status,created_date,cate_id"
 	val := "VALUES($1,$2,$3,$4,$5"
+
 	if req.TaskDescription != nil {
 		q1 += ",description)"
 		val += ",$6)"
@@ -38,6 +39,7 @@ func queryInsertBuilder(req *proto.CreateTaskRequest) string {
 
 	return q1
 }
+
 func (r todoListRepository) Create(ctx context.Context, req *proto.CreateTaskRequest) (*proto.Task, error) {
 	query := queryInsertBuilder(req)
 	if req.TaskCreated == nil {

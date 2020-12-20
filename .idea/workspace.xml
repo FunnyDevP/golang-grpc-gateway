@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3706526e-6ffb-420d-a5ac-746be0bf6fcb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/todolist.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/todolist.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +47,27 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/helper/validation" />
       <recent name="$PROJECT_DIR$/internal/repository/integration_test" />
       <recent name="$PROJECT_DIR$/internal/repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository">
+  <component name="RunManager" selected="Go Test.TestEmptyFieldCreateSource_CateGoryIdIsEmpty_ReturnErrorInvalidArgument in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/helper/validation">
     <configuration name="go build github.com/FunnyDevP/todolist-golang-grpc-gateway/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="todolist-golang-grpc-gateway" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/cmd/main.go" />
       <package value="github.com/FunnyDevP/todolist-golang-grpc-gateway/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="todolist-golang-grpc-gateway" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/cmd/main.go" />
+      <package value="github.com/FunnyDevP/todolist-golang-grpc-gateway" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -70,6 +82,17 @@
       <pattern value="^\QTestCreateTasks\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestEmptyFieldCreateSource_CateGoryIdIsEmpty_ReturnErrorInvalidArgument in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/helper/validation" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="todolist-golang-grpc-gateway" />
+      <working_directory value="$PROJECT_DIR$/internal/helper/validation" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/helper/validation" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestEmptyFieldCreateSource_CateGoryIdIsEmpty_ReturnErrorInvalidArgument\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="todolist-golang-grpc-gateway" />
       <working_directory value="$PROJECT_DIR$/internal/repository" />
@@ -81,33 +104,13 @@
       <pattern value="^\QTestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="todolist-golang-grpc-gateway" />
-      <working_directory value="$PROJECT_DIR$/internal/repository/integration_test" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="todolist_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="todolist-golang-grpc-gateway" />
-      <working_directory value="$PROJECT_DIR$/internal/repository/integration_test" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <package value="github.com/FunnyDevP/todolist-golang-grpc-gateway" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/internal/repository/integration_test/todolist_test.go" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestEmptyFieldCreateSource_CateGoryIdIsEmpty_ReturnErrorInvalidArgument in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/helper/validation" />
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.TestQueryBuilder_DescriptionIsEmpty_ReturnQueryInsertWithoutDescription in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository" />
         <item itemvalue="Go Test.TestCreateTasks in github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test" />
         <item itemvalue="Go Build.go build github.com/FunnyDevP/todolist-golang-grpc-gateway/cmd" />
-        <item itemvalue="Go Test.todolist_test.go" />
-        <item itemvalue="Go Test.go test github.com/FunnyDevP/todolist-golang-grpc-gateway/internal/repository/integration_test" />
       </list>
     </recent_temporary>
   </component>
